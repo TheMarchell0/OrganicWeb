@@ -13,6 +13,7 @@
 body {
     font-family: 'Jost', sans-serif;
     color: $gray;
+    overflow-x: hidden;
 }
 
 .title {
@@ -42,6 +43,8 @@ body {
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .section-main {
@@ -49,14 +52,14 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 100px;
+    padding-bottom: 208px;
     position: relative;
     &__image {
         position: absolute;
     }
     &__tomato {
         right: 110px;
-        bottom: 31px;
+        bottom: 141px;
     }
     &__cucumber {
         top: -4px;
@@ -68,19 +71,11 @@ body {
     }
     &__pepper{
         left: 34px;
-        top: 395px;
+        top: 36%;
     }
-    &__bob {
-        left: 13px;
-        bottom: 153px;
-    }
-    &__bob-2 {
-        left: -6px;
-        bottom: 120px;
-    }
-    &__bob-3 {
-        left: 34px;
-        bottom: 77px;
+    &__beans {
+        left: -5px;
+        bottom: 188px;
     }
 }
 
@@ -167,5 +162,18 @@ body {
                 right: 38px;
             }
         }
+    }
+}
+
+.section-stock {
+    background-image: url(../img/bg-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__text {
+        font-size: 1.5rem;
+        max-width: 690px;
+        line-height: 1.5;
+        margin-top: 3.75rem;
     }
 }
