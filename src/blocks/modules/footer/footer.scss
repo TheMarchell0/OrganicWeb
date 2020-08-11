@@ -15,7 +15,11 @@
         display: flex;
         justify-content: space-between;
         flex: 0 0 66.4%;
+        @media (max-width: 1200px) {
+            flex: 0 0 72%;
+         }
     }
+    
 }
 
 .box-footer-list {
@@ -46,14 +50,26 @@
     &__vk {
         background-image: url(../../../img/vk.svg);
         background-size: 23px 18px;
+        &:hover {
+            background-color: #5181b8;
+            border: 2px solid #5181b8;
+        }
     }
     &__inst {
         background-image: url(../../../img/instagram.svg);
         background-size: 18px 18px;
+        &:hover {
+            border: 2px solid #cc2366;
+            background-color: #cc2366; 
+        }
     }
     &__fb {
         background-image: url(../../../img/facebook.svg);
         background-size: 23px 18px;
+        &:hover {
+            background-color: #4267b2;
+            border: 2px solid #4267b2;
+        }
     }
     &__link {
         width: 48px;
