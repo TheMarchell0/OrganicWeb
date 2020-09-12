@@ -19,6 +19,12 @@ body {
     font-family: 'Cormorant', sans-serif;
     font-size: 5rem;
     line-height: 1;
+    @media (max-width: 1200px) {
+        text-align: center;
+    }
+    @media (max-width: 650px) {
+        font-size: 4rem;
+    }
     span {
         font-style: italic;
     }
@@ -72,10 +78,13 @@ body {
 
 .section-main {
     background-image: url(../img/bg-1.png);
+    @media (max-width: 700px) {
+        background-image: url(../img/mobile-bg-1.png);  
+    }
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 208px;
+    padding-bottom: 186px;
     position: relative;
     &__image {
         position: absolute;
@@ -151,6 +160,8 @@ body {
                 display: block;
                 width: 427px;
                 margin: 0 auto 65px;
+                box-shadow: 15px 48px 42px 0px rgba(39, 48, 15, 0.4);
+                border-radius: 50%;
             }
         }
     }
@@ -242,6 +253,9 @@ body {
 
 .section-stock {
     background-image: url(../img/bg-2.png);
+    @media (max-width: 700px) {
+        background-image: url(../img/mobile-bg-2.png);  
+    }
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -251,10 +265,19 @@ body {
         max-width: 690px;
         line-height: 1.5;
         margin-top: 3.75rem;
+        @media (max-width: 1200px) {
+            max-width: 100%;
+            text-align: center;
+        }
     }
 }
 
 .slider {
+    @media (min-width: 751px) {
+        .slider-link-mobile {
+            display: none;
+        }
+    }
     margin-top: 92px;
     &-child {
         padding: 5px 10px;
@@ -309,6 +332,11 @@ body {
 
     &-milk {
         background-image: url(../img/stock/milk.png);
+        @media (max-width: 750px) {
+            background-image: url(../img/stock/bottle.png);
+            background-position: top;
+            background-size: 340px;
+        }
     }
     &-pasta {
         background-image: url(../img/stock/pasta.png);
@@ -321,14 +349,20 @@ body {
         bottom: 2.75rem;
         left: 2.25rem;
         max-width: 58%;
-        transform: translate(0, 241px);
+        transform: translate(0, 271px);
         transition: 0.3s ease;
         @media (max-width: 1440px) {
             max-width: 80%;
             transform: translate(0, 255px);
         }
-        @media (max-width: 1200px) {
-            transform: translate(0, 205px);
+        @media (max-width: 1198px) {
+            transform: translate(0, 227px);
+        }
+        @media (max-width: 802px) {
+            transform: translate(0, 253px);
+        }
+        @media (max-width: 750px) {
+            transform: translate(0, 175px);
         }
 
         &__title {
@@ -353,6 +387,8 @@ body {
             transition: 0.3s ease;
             &:hover {
                 opacity: 1;
+                text-decoration: none;
+                color: $gray;
                 padding: 45px;
             }
             &:focus {
@@ -391,12 +427,15 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 148px;
+    padding-bottom: 148px; 
     &__text {
     font-size: 24px;
     padding-top: 42px;
     margin: 0;
+    @media (max-width: 1200px) {
+          text-align: center;
     }
+}
 }
 
 .slider-info {
@@ -407,6 +446,9 @@ body {
         @media (max-width: 1440px) {
             min-height: 68px;
         }
+        @media (max-width: 750px) {
+            text-align: center;
+        }
     }
     &__description {
         font-size: 1.12rem;
@@ -415,10 +457,16 @@ body {
         margin-bottom: 0;
         min-height: 52px;
         max-width: 96%;
+        @media (max-width: 750px) {
+            text-align: center;
+        }
     }
     &__price {
         font-size: 1.5rem;
         margin-top: 28px;
+        @media (max-width: 750px) {
+            text-align: center;
+        }
     }
 }
 
@@ -428,6 +476,9 @@ body {
     align-items: center;
     margin-top: 32px;
     margin-bottom: 8px;
+    @media (max-width: 750px) {
+        justify-content: center;
+    }
     &__btn {
         padding: 1.4rem 3.2rem;
         cursor: pointer;
@@ -441,6 +492,9 @@ body {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
+    @media (max-width: 750px) {
+        display: none;
+    }
     &__minus, &__plus {
         display: block;
         width: 3.12rem;
@@ -527,6 +581,9 @@ body {
 }
 .section-advantage {
     background-image: url(../img/bg-3.png);
+    @media (max-width: 700px) {
+        background-image: url(../img/mobile-bg-3.png);  
+    }
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -628,6 +685,9 @@ body {
         line-height: 1.5;
         margin-top: 2.2rem;
         letter-spacing: 1px;
+        @media (max-width: 1200px) {
+            text-align: center;
+        }
     }
 }
 
@@ -639,11 +699,17 @@ body {
     flex-wrap: wrap;
     margin-top: 87px;
     margin-bottom: 28px;
+    @media (max-width: 1200px) {
+        justify-content: space-between;
+    }
     &-item {
         max-width: 230px;
         flex-basis: 230px;
         margin-right: 20px;
         margin-bottom: 20px;
+        @media (max-width: 780px) {
+            margin-right: 0;
+        }
     }
     &-link {
         color: rgba($gray,0.5);
@@ -655,6 +721,9 @@ body {
         font-size: 1.12rem;
         display: block;
         transition: 0.2s ease;
+        @media (max-width: 730px) {
+            padding: 1rem 0;
+        }
         &:hover {
             color: $orange;
             border: 1px solid  $orange;
@@ -829,6 +898,9 @@ body {
 
 .section-delivery {
     background-image: url(../img/bg-6.png);
+    @media (max-width: 700px) {
+        background-image: url(../img/mobile-bg-6.png);  
+    }
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -838,6 +910,16 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 65px;
+    @media (max-width: 950px) {
+        flex-direction: column;
+        .ml {
+            text-align: center;
+        }
+        .mr {
+            margin-right: 0;
+            text-align: center;
+        }
+    }
     &-item {
         flex: 0 0 49%;
         &:last-child {
@@ -868,6 +950,9 @@ body {
     list-style-type: none;
     display: flex;
     margin-top: 46px;
+    @media (max-width: 950px) {
+        justify-content: center;
+    }
     &__item {
         display: block;
         background-repeat: no-repeat;
@@ -900,6 +985,9 @@ body {
 
 .section-form {
     background-image: url(../img/bg-7.png);
+    @media (max-width: 700px) {
+        background-image: url(../img/mobile-bg-7.png);  
+    }
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -910,6 +998,9 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 160px;
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
     .title {
         margin-bottom: 60px;
     }
@@ -922,6 +1013,9 @@ body {
     &__text {
         font-size: 1.12rem;
         line-height: 1.5;
+        @media (max-width: 1200px) {
+            text-align: center;
+        }
     }
 }
 
@@ -929,10 +1023,19 @@ body {
 .box-form-list {
     list-style-type: none;
     margin-top: 62px;
+    @media (max-width: 1200px) {
+        display: flex;
+        align-items: center;
+        padding-bottom: 70px;
+        justify-content: space-around;
+    }
     &__item {
         position: relative;
         padding-left: 58px;
         margin-bottom: 20px;
+        @media (max-width: 1200px) {
+            margin-bottom: 0;
+        }
         &:last-child {
             margin-bottom: 0;
         }
@@ -964,6 +1067,9 @@ body {
         font-size: 1.5rem;
         font-weight: 500;
         transition: 0.2s ease;
+        @media (max-width: 600px) {
+            font-size: 1.1rem;
+        }
         &:hover {
             color: $orange;
         }
