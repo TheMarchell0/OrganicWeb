@@ -49,14 +49,29 @@
                     <div class="main-visual__image">
                         <img src="../img/image-main.png" alt="">
                     </div>
-                    <button class="main-visual__btn main-visual__01">
+                    <button type="button" id="dropdownMenuButton" class="main-visual__btn main-visual__01 dropdown" data-toggle="dropdown">
                         Авокадо <span>134 руб</span>
+                        <div class="dropdown-menu show">
+                            <p class="dropdown-item dropdown-button-title">Авокадо</p>
+                            <p class="dropdown-item dropdown-button-description">Авокадо спелый,<br>Свежий урожай, 1кг</p>
+                            <p class="dropdown-item dropdown-button-price">400 руб/кг</p>
+                          </div>
                     </button>
-                    <button class="main-visual__btn main-visual__02">
+                    <button type="button" id="dropdownMenuButton" class="main-visual__btn main-visual__02 dropdown" data-toggle="dropdown">
                         Картофель <span>169 руб</span>
+                        <div class="dropdown-menu show">
+                            <p class="dropdown-item dropdown-button-title">Картофель</p>
+                            <p class="dropdown-item dropdown-button-description">Картофель молодой,<br>Свежий урожай, 1кг</p>
+                            <p class="dropdown-item dropdown-button-price">169 руб/кг</p>
+                          </div>
                     </button>
-                    <button class="main-visual__btn main-visual__03">
+                    <button type="button" id="dropdownMenuButton" class="main-visual__btn main-visual__03 dropdown" data-toggle="dropdown">
                         Томаты<span>215 руб</span>
+                        <div class="dropdown-menu show">
+                            <p class="dropdown-item dropdown-button-title">Томаты</p>
+                            <p class="dropdown-item dropdown-button-description">Томат спелый,<br>Свежий урожай, 1кг</p>
+                            <p class="dropdown-item dropdown-button-price">256 руб/кг</p>
+                          </div>
                     </button>
                 </div>
             </div>
@@ -76,7 +91,7 @@
                     <div class="slider-item slider-hover slider-milk">
                         <div class="slider-text">
                             <h3 class="slider-text__title">Молочные продукты</h3>
-                            <a href="" class="slider-text__link slider-link-mobile">Подробнее</a>
+                            <a href="" class="slider-link-mobile">Подробнее</a>
                             <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
                             <a href="" class="slider-text__link">Подробнее</a>
                         </div>
@@ -86,7 +101,7 @@
                     <div class="slider-item slider-hover slider-pasta">
                         <div class="slider-text">
                             <h3 class="slider-text__title">Бакалея</h3>
-                            <a href="" class="slider-text__link slider-link-mobile">Подробнее</a>
+                            <a href="" class="slider-link-mobile">Подробнее</a>
                             <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
                             <a href="" class="slider-text__link">Подробнее</a>
                         </div>
@@ -96,7 +111,7 @@
                     <div class="slider-item slider-hover slider-meat">
                         <div class="slider-text">
                             <h3 class="slider-text__title">Мясо, птица</h3>
-                            <a href="" class="slider-text__link slider-link-mobile">Подробнее</a>
+                            <a href="" class="slider-link-mobile">Подробнее</a>
                             <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
                             <a href="" class="slider-text__link">Подробнее</a>
                         </div>
@@ -106,7 +121,7 @@
                     <div class="slider-item slider-hover slider-milk">
                         <div class="slider-text">
                             <h3 class="slider-text__title">Молочные продукты</h3>
-                            <a href="" class="slider-text__link slider-link-mobile">Подробнее</a>
+                            <a href="" class="slider-link-mobile">Подробнее</a>
                             <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
                             <a href="" class="slider-text__link">Подробнее</a>
                         </div>
@@ -116,7 +131,7 @@
                     <div class="slider-item slider-hover slider-pasta">
                         <div class="slider-text">
                             <h3 class="slider-text__title">Бакалея</h3>
-                            <a href="" class="slider-text__link slider-link-mobile">Подробнее</a>
+                            <a href="" class="slider-link-mobile">Подробнее</a>
                             <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
                             <a href="" class="slider-text__link">Подробнее</a>
                         </div>
@@ -126,7 +141,7 @@
                     <div class="slider-item slider-hover slider-meat">
                         <div class="slider-text">
                             <h3 class="slider-text__title">Мясо, птица</h3>
-                            <a href="" class="slider-text__link slider-link-mobile">Подробнее</a>
+                            <a href="" class="slider-link-mobile">Подробнее</a>
                             <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
                             <a href="" class="slider-text__link">Подробнее</a>
                         </div>
@@ -497,17 +512,31 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="menuModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="menuModalLabel"></h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Наша&nbsp;продукция</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">О&nbsp;компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Новинки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="box-footer-social">
+                        <li class="box-footer-social__item">
+                            <a class="box-footer-social__link box-footer-social__vk" href="#" target="_blank"></a>
+                        </li>
+                        <li class="box-footer-social__item">
+                            <a class="box-footer-social__link box-footer-social__inst" href="#" target="_blank"></a>
+                        </li>
+                        <li class="box-footer-social__item">
+                            <a class="box-footer-social__link box-footer-social__fb" href="#" target="_blank"></a>
+                        </li>
+                    </ul>
             </div>
           </div>
         </div>

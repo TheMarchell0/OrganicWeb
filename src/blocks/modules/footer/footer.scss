@@ -52,12 +52,18 @@
         display: flex;
         justify-content: space-between;
         width: 400px;
+        @media (max-width: 410px) {
+            width: 300px;
+         }
      }
 }
 
 .box-footer-list {
     font-size: 1.12rem;
     list-style-type: none;
+    @media (max-width: 410px) {
+        font-size: 0.9rem;
+     }
     &__item {
         margin-bottom: 1.62rem;
     }
@@ -65,6 +71,9 @@
         text-decoration: none;
         color: $gray;
         transition: 0.2s ease;
+        @media (max-width: 410px) {
+            font-size: 0.9rem;
+         }
         &:hover {
             color: $orange;
         }
@@ -127,10 +136,17 @@
      }
     &__copy {
         opacity: 0.6;
+        @media (max-width: 410px) {
+            font-size: 0.9rem;
+         }
     }
     &__text {
         color: #a6a8a4;
         position: relative;
+        text-align: center;
+        @media (max-width: 410px) {
+            font-size: 0.9rem;
+         }
     }
     &__link {
         text-decoration: none;
