@@ -18,10 +18,17 @@
     @media (max-width: 990px) {
         max-width: 100%;
     }
+    @media (max-width: 350px) {
+        padding-top: 36px;
+        padding-bottom: 34px;
+    }
     &-item {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 350px) {
+            width: 132px;
+        }
     }
     &__tel {
         text-decoration: none;
@@ -37,8 +44,8 @@
             }
             @media (max-width: 990px) {
                 text-indent: -9999px;
-                width: 2.5rem;
-                height: 2.5rem;
+                width: 2.3rem;
+                height: 2.3rem;
                 background-color: transparent;
                 border: 1px solid $gray;
                 background-image: url(../../../img/tel.svg);
@@ -54,8 +61,8 @@
              }
             @media (max-width: 990px) {
                 display: block;
-                width: 2.5rem;
-                height: 2.5rem;
+                width: 2.3rem;
+                height: 2.3rem;
                 background-color: transparent;
                 border: 1px solid $gray;
                 background-image: url(../../../img/menu.svg);
@@ -68,13 +75,16 @@
                     outline: none;
                 }
              }
+             @media (max-width: 350px) {
+                margin-left: 0;
+             }
         }  
     }
 
     .header-cart {
         position: relative;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.3rem;
+        height: 2.3rem;
         margin-left: 80px;
         &:focus {
             outline: none;
@@ -85,9 +95,13 @@
         @media (max-width: 1200px){
             margin-left: 20px;
         }
+        @media (max-width: 350px){
+            margin-left: 0;
+        }
+
         &__button {
-            width: 2.5rem;
-            height: 2.5rem;
+            width: 2.3rem;
+            height: 2.3rem;
             background-color: $orange;
             border: none;
             border-radius: 100%;
@@ -129,6 +143,9 @@
     }
     @media (max-width: 1200px) {
         margin-right: 32px;
+    }
+    @media (max-width: 350px) {
+        width: 94px;
     }
     }
     
