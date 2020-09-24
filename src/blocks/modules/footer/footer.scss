@@ -2,11 +2,20 @@
     border-top: 1px solid $gray;
     padding-top: 77px;
     padding-bottom: 60px;
+    @media (max-width: 350px) {
+        padding-top: 38px;
+        padding-bottom: 18px;
+     }
     .logo {
         width: 179px;
         height: 48px;
         @media (max-width: 1000px) {
             margin-bottom: 30px;
+         }
+         @media (max-width: 350px) {
+            width: 121px;
+            margin: 0 auto;
+            padding-bottom: 58px;
          }
     }
 }
@@ -48,12 +57,21 @@
 }
 
 .box-footer-menu {
+    .box-footer-list__item {
+        margin-bottom: 1.62rem;
+        @media (max-width: 350px) {
+            margin-bottom: 1.2rem;
+         }
+    }
     @media (max-width: 800px) {
         display: flex;
         justify-content: space-between;
         width: 400px;
         @media (max-width: 410px) {
             width: 300px;
+         }
+         @media (max-width: 350px) {
+            width: 238px;
          }
      }
 }
@@ -64,8 +82,22 @@
     @media (max-width: 410px) {
         font-size: 0.9rem;
      }
+     @media (max-width: 350px) {
+        font-size: 0.75rem;
+     }
     &__item {
         margin-bottom: 1.62rem;
+        @media (max-width: 350px) {
+            margin-bottom: 0.5rem;
+            &:last-child {
+                margin-bottom: 1.3rem;
+            }
+         }
+    }
+    .mobile-footer-phone {
+        @media (max-width: 350px) {
+            font-size: 1.875rem;
+         }
     }
     &__link {
         text-decoration: none;
@@ -74,6 +106,9 @@
         @media (max-width: 410px) {
             font-size: 0.9rem;
          }
+         @media (max-width: 350px) {
+            font-size: 0.75rem;
+         }
         &:hover {
             color: $orange;
         }
@@ -81,6 +116,9 @@
     &__tel {
         font-size: 1.875rem;
         margin-bottom: 2.06rem;
+        @media (max-width: 350px) {
+            margin-bottom: 0;
+         }
     }
 
 }
@@ -89,6 +127,11 @@
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    @media (max-width: 350px) {
+        margin-top: 41px;
+        max-width: 241px;
+        justify-content: space-around;
+     }
     &__vk {
         background-image: url(../../../img/vk.svg);
         background-size: 23px 18px;
@@ -134,10 +177,17 @@
         flex-direction: column;
         align-items: center;
      }
+     @media (max-width: 350px) {
+        margin-top: 27px;
+     }
     &__copy {
         opacity: 0.6;
         @media (max-width: 410px) {
             font-size: 0.9rem;
+         }
+         @media (max-width: 350px) {
+            font-size: 0.625rem;
+            margin-bottom: 0.2rem;
          }
     }
     &__text {
@@ -146,6 +196,9 @@
         text-align: center;
         @media (max-width: 410px) {
             font-size: 0.9rem;
+         }
+         @media (max-width: 350px) {
+            font-size: 0.625rem;
          }
     }
     &__link {
